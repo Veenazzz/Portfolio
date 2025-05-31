@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav> 
+            <img src="logoji.png" class="logo">
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+           
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p> Web Developer</p>
+            <h1> Hi, I'm <span> Veena</span><br> Dwivedi from India</h1>
+        </div>
+    </div>
+   </div>
+
+
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="myprofile.jpg" alt="profile pic" />
+
+            </div>
+            <div class="about-col-2">
+            <h1 class="subtitle"> About Me</h1>
+            <p>I am currently pursuing a BTech degree in Software Engineering, driven by a passion for problem-solving and building innovative software solutions. With a strong foundation in development and algorithms, I strive to create efficient and impactful applications. I am always eager to connect with professionals to learn, grow, and expand my expertise in the field.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab(event,'skills')"> Skills</p>
+                <p class="tab-links"  onclick="opentab(event,'experience')"> Experience</p>
+                <p class="tab-links" onclick="opentab(event,'education')"> Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span> Front-End Development</span><br>Designing Web interfaces </li>
+                    <li><span> Java Application Development</span><br>Developing and solving Java based Problems </li>
+                    <li><span> Languages</span><br>Java,Kotlin,HTML,CSS,JavaScript,C/C++(basic),SQL,Python(basic)</li>
+                    <li><span> Soft Skills</span><br>Problem Solving,Adaptibility,Curiosity,Team Work,Strong Stakeholder Management</li>
+                    <li><span> Coursework</span><br> DSA,Algorithm Design and Analysis,OOPs,Operating System,DBMS,Machine Learning,Theory of Computation,Software Quality Assurance </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span> Virtual Internship at WELLS FARGO</span><br>  Created and Implemented Entity Relationship Diagrams (ERDs) for structured data modeling
+
+                        </li>
+                   
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span> 2022-2026</span><br>BTech from Delhi Technological University - CGPA: 8.46</li>
+                    <li><span> 2021-2022</span><br>Class - 12th, Adarsh Jain Dharmik Shiksha Sadan - 94.6%</li>
+                    <li><span> 2019-2020</span><br>Class - 10th, Sacred Heart Centenary Academy - 93%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </div> 
+<!-- services................-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div> 
+                <i class="fas fa-code"></i>
+                <h2>
+                    Web Design
+                </h2>
+                <p>I design and build responsive, user-friendly websites that combine modern aesthetics with performance. My focus is on clean code, seamless UX/UI, and accessibility across all devices. From static pages to dynamic web apps, I bring your ideas to life through code.</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop"></i> 
+                <h2>
+                    Java Enthusiast
+                </h2>
+                <p>I specialize in writing clean and efficient Java code, from building backend systems to solving complex algorithmic problems. Whether it’s object-oriented programming, data structures, or real-world application logic, I enjoy leveraging Java to craft scalable and maintainable solutions.</p>
+                 <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------portfolio---------->
+<div id="portfolio" class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+           
+                <div class="work">
+                    <img src="Screenshot 2025-04-07 175214.png">
+                    <div class="layer">
+                      <h3>Myntra Functional Clone</h3>
+                      <p>A fully functional front-end clone of the popular e-commerce platform Myntra.</p>
+                      <div class="links">
+                        <a href="https://your-deployed-link.com" target="_blank" title="View Deployed Project"> 
+                          <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/yourusername/myntra-clone" target="_blank" title="View Code on GitHub"> 
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="work">
+                <img src="sentiments.png">
+                <div class="layer">
+                    <h3>Sentimental Analysis Prediction Model</h3>
+                    <p> A machine learning project that classifies text data based on sentiment (positive, negative, neutral). It uses natural language processing techniques and supervised learning models to analyze user reviews and predict sentiment.</p>
+                    
+                    <a href="https://colab.research.google.com/drive/177cTLJpL-Q4VRA5YKiSosfdSRVeW146u?usp=sharing" target="_blank" title="View Code on GitHub"> 
+                        <i class="fab fa-github"></i>
+                      </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="carrrr.jpg">
+                <div class="layer">
+                    <h3>Car Rental System</h3>
+                    <p> A Java-based system to manage car rentals efficiently. Users can book, return, and view available cars. Includes admin functionality for managing fleet and viewing customer details.</p>
+                   
+                    <a href="https://github.com/Veenazzz/Car-Rental" target="_blank" title="View Code on GitHub"> 
+                        <i class="fab fa-github"></i>
+                      </a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- CONTACT--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+<p> <i class="fa-solid fa-paper-plane"></i> veena25dwivedi@gmail.com</p>
+<p> <i class="fa-solid fa-phone"></i>9696678810</p>
+<div class="social-icons">
+    <a href="https://www.instagram.com/__veenaahh?igsh=b2Rwemx5cTBnNDY0"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/veena-dwivedi-3abab9259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Veenazzz"><i class="fa-brands fa-github"></i></a>
+</div>
+<a href="8.6 resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Veena. Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents"); 
+    function opentab(event,tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");}
+</script>
+
+<script>
+
+
+var sidemeu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemeu.style.right="0";
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+}
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby9jFrDZzS_uuA5oPhnpIlJOHBj0hAtYHA-ncEcSsCrRmic1_fahwS0tpMh1F0gXL-z/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""},5000)
+                form.reset()
+            })
+
+       
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+
+</body>
+</html>
